@@ -1,0 +1,9 @@
+CREATE OR REPLACE TABLE Category(
+
+id IDENTITY NOT NULL,
+name VARCHAR(50) NOT NULL,
+description VARCHAR(100) NOT NULL,
+is_active BOOLEAN,
+
+CONSTRAINT pk_catagory_id PRIMARY KEY(id)
+);
