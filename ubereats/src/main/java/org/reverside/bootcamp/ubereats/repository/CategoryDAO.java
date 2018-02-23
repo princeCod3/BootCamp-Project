@@ -6,9 +6,13 @@ import org.reverside.bootcamp.ubereats.dto.Category;
 
 public interface CategoryDAO {
 
-	boolean addCategory(Category category);
 	
-	List<Category> list();
 	Category get(int id);
 	
+	List<Category> list();
+	
+	//CRUD operations
+	boolean addCategory(Category category);
+	boolean updateCategory(Category category);
+	boolean deleteCategory(Category category);
 }
